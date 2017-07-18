@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="pen-drive" extends="struts-default">
+		<action name="upload" class="com.pankaj.action.ProductMgmtAction">
+			<result name="success">/success.jsp</result>
+		</action>
+		<action name="getAllData" class="com.pankaj.action.ProductMgmtAction"
+			method="getAllData">
+			<result name="success">/success.jsp</result>
+		</action>
+		<action name="register" class="com.pankaj.action.UserMgmtAction"
+			method="userRegistration">
+			<result name="success">/success.jsp</result>
+		</action>
+		<action name="login" class="com.pankaj.action.UserMgmtAction"
+			method="userLogin">
+			<result name="success">/success.jsp</result>
+			<result name="input">/index.jsp</result>
+		</action>
+	</package>
+
+</struts>
